@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import { PRODUCTS as initialProducts, CATEGORIES } from '@/lib/dummy-data';
 import ProductCard from '@/components/ProductCard';
@@ -95,7 +96,7 @@ export default function ProductsPage() {
 
           <div className="mt-12 p-8 border border-[#e5d5b5] bg-white text-center">
              <h4 className="font-cinzel text-[10px] tracking-[3px] text-[#8B6914] mb-4">Bespoke Service</h4>
-             <p className="text-sm italic text-[#5d0c0c] mb-6">Can't find your dream creation? Connect with our master designers.</p>
+             <p className="text-sm italic text-[#5d0c0c] mb-6">Can&apos;t find your dream creation? Connect with our master designers.</p>
              <button className="text-[11px] font-bold uppercase tracking-widest border-b border-[#5d0c0c] pb-1 text-[#5d0c0c]">Inquire Now</button>
           </div>
         </aside>

@@ -1041,7 +1041,7 @@ export default function HomePage() {
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, fontWeight: 700, color: '#5d0c0c', lineHeight: 1.2, marginBottom: 20 }}>The Legacy of Shree Ganga Handloom</h2>
             <div style={{ width: 60, height: 3, background: '#D4AF37', marginBottom: 24 }} />
             <p style={{ fontSize: 15, color: '#555', lineHeight: 1.8, marginBottom: 16 }}>
-              At <strong style={{ color: '#5d0c0c' }}>Shree Ganga</strong>, we believe every sharee is a masterpiece, a silent story of heritage woven into six yards of elegance. Born in the heart of Rudrapur, Deoria, our legacy spans over 25 years of preserving India's timeless handloom traditions.
+              At <strong style={{ color: '#5d0c0c' }}>Shree Ganga</strong>, we believe every sharee is a masterpiece, a silent story of heritage woven into six yards of elegance. Born in the heart of Rudrapur, Deoria, our legacy spans over 25 years of preserving India&apos;s timeless handloom traditions.
             </p>
             <p style={{ fontSize: 15, color: '#555', lineHeight: 1.8, marginBottom: 24, fontStyle: 'italic' }}>
               "Humari har sharee mein Bharat ki aatma basti hai." {'\u2014'} From the sacred whispers of the looms to the golden touch of the zari, we bring you not just clothing, but a heritage that you can wear with pride.
@@ -1444,7 +1444,7 @@ export default function HomePage() {
         <div style={{ position: 'relative', zIndex: 2, padding: '0 20px', maxWidth: 800 }}>
           <h2 className="sg-unmask" style={{ fontFamily: "'Playfair Display', serif", fontSize: 48, marginBottom: 20 }}>Empowering Tradition, Defining Elegance</h2>
           <p style={{ fontSize: 18, color: '#fff', lineHeight: 1.6, fontWeight: 300 }}>
-            "Shree Ganga is not just a brand; it's a movement to keep the rhythm of the handloom alive. 
+            "Shree Ganga is not just a brand; it&apos;s a movement to keep the rhythm of the handloom alive. 
             We promise to bring the finest threads of India to your doorstep, ensuring every woman feels like royalty."
           </p>
           <div style={{ marginTop: 30, display: 'flex', gap: 20, justifyContent: 'center' }}>

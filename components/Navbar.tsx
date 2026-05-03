@@ -712,7 +712,7 @@ export default function Navbar() {
                           <a href="#">Linen Mix</a>
                         </div>
                         <div className="sg-mega-col">
-                          <h3>Men's Handloom</h3>
+                          <h3>Men&apos;s Handloom</h3>
                           <a href="#">Khadi Kurta</a>
                           <a href="#">Handloom Shirts</a>
                           <a href="#">Dhoti & Lungi</a>
@@ -752,7 +752,7 @@ export default function Navbar() {
                           <a href="#">Reception Gowns</a>
                         </div>
                         <div className="sg-mega-col">
-                          <h3>Groom's Collection</h3>
+                          <h3>Groom&apos;s Collection</h3>
                           <a href="#">Sherwani</a>
                           <a href="#">Bandhgala Suits</a>
                           <a href="#">Wedding Kurta</a>
@@ -778,7 +778,7 @@ export default function Navbar() {
               }
               return <a key={cat} href="#" className="sg-subnav-item">{cat}</a>;
             })}
-            <a href="#" className="sg-subnav-item hot">⚡ Today's Deals</a>
+            <a href="#" className="sg-subnav-item hot">⚡ Today&apos;s Deals</a>
             <a href="#" className="sg-subnav-item hot">🔥 New Arrivals</a>
           </div>
         </div>

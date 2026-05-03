@@ -1,5 +1,6 @@
 "use client";
 import { Star, ShoppingBag, Heart } from 'lucide-react';
+import Link from 'next/link';
 import { useCart } from '@/lib/CartContext';
 
 interface ProductProps {

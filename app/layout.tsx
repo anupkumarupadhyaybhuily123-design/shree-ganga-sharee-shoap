@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { CartProvider } from "@/lib/CartContext";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Shree Ganga Handloom | Premium Ethnic Store",
@@ -20,11 +22,15 @@ export default function RootLayout({
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='12' width='100' height='100' fill='%23111'/><text x='50' y='62' font-size='48' font-weight='bold' fill='%23D4AF37' text-anchor='middle' font-family='serif'>SG</text></svg>" />
       </head>
       <body>
-        <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <CartProvider>
+          <Suspense fallback={<div className="h-20 bg-[#131921]" />}>
+            <Navbar />
+          </Suspense>
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </CartProvider>
         <a
           href="https://wa.me/919305115851?text=Hello%20Shree%20Ganga%20Handloom,%20I%20have%20an%20inquiry."
           target="_blank"
