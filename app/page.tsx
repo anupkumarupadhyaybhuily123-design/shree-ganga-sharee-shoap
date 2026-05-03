@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { PRODUCTS as initialProducts } from '@/lib/dummy-data';
@@ -102,7 +102,7 @@ const BRAND_STORY = [
   { label: 'Shree Ganga', sub: 'Pure Emotions', img: 'https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&q=80&w=600&h=800', bg: 'linear-gradient(135deg, #fffaf0 0%, #fff 100%)' },
 ];
 
-export default function HomePage() {
+function HomePageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const query = searchParams.get('q');
@@ -1504,5 +1504,13 @@ export default function HomePage() {
       <div className="sg-cursor-follower" />
       <style>{`.sg-btt-vert:hover { color: #D4AF37; } .sg-btt-vert:hover span { background: #D4AF37; }`}</style>
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#fdfaf3]" />}>
+      <HomePageContent />
+    </Suspense>
   );
 }
