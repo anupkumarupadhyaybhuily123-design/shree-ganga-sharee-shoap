@@ -7,7 +7,7 @@ import { SlidersHorizontal, ChevronDown, LayoutGrid, List, Search } from 'lucide
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [priceRange, setPriceRange] = useState(10000);
-  const [products, setProducts] = useState(initialProducts);
+  const [products, setProducts] = useState<any[]>(initialProducts);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {

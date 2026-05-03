@@ -11,7 +11,7 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(false);
 
   // PRODUCT MANAGEMENT STATE
-  const [products, setProducts] = useState(initialProducts);
+  const [products, setProducts] = useState<any[]>(initialProducts);
   const [mounted, setMounted] = useState(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,12 +62,16 @@ export default function AdminPage() {
   const handleAddProduct = (e: React.FormEvent) => {
     e.preventDefault();
     const product = {
-      id: products.length + 1,
+      id: String(products.length + 1 + Date.now()),
       name: newProduct.name,
       category: newProduct.category,
       priceRange: '\u20b9' + Number(newProduct.priceMin).toLocaleString() + ' \u2013 \u20b9' + Number(newProduct.priceMax).toLocaleString(),
       price: Number(newProduct.priceMin),
-      image: newProduct.image || "https://images.unsplash.com/photo-1610030469983-98e550d6193c"
+      image: newProduct.image || "https://images.unsplash.com/photo-1610030469983-98e550d6193c",
+      rating: 5,
+      reviews: 0,
+      description: 'Artisan crafted heritage piece.',
+      features: ['Handcrafted', 'Authentic Material']
     };
     setProducts([product, ...products]);
     setIsModalOpen(false);

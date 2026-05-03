@@ -116,7 +116,7 @@ export default function HomePage() {
   ];
 
   const [slide, setSlide] = useState(0);
-  const [products, setProducts] = useState(initialProducts);
+  const [products, setProducts] = useState<any[]>(initialProducts);
   const [mounted, setMounted] = useState(false);
   const [countdown, setCountdown] = useState({ h: 5, m: 47, s: 32 });
   const [socialProof, setSocialProof] = useState(-1);
