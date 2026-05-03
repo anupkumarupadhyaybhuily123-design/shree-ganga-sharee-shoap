@@ -1,3 +1,4 @@
+"use client";
 import { Star, ShoppingBag, Heart } from 'lucide-react';
 import { useCart } from '@/lib/CartContext';
 
